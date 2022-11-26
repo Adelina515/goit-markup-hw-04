@@ -11,7 +11,8 @@
 --header-logo-color: #000000;
 --team-background-color: #F5F4FA;
 --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
-
+--second-background-color-icon: #2196F3;
+--primary-background-color-icon: #AFB1B8;
 }
 
 .link{
@@ -47,7 +48,7 @@ body {
     width: 1200px;
     padding: 0px 15px;
     margin: 0 auto;
-}
+} 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -60,6 +61,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 .header-logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -85,7 +87,6 @@ span.header-logo:focus{
 }
 .header-list {
     display: flex;
-    
 }
 .header-element{
     margin-right: 50px;
@@ -130,6 +131,7 @@ span.header-logo:focus{
 .header-mail:hover,
 .header-mail:focus{
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 .header-tel{
     font-weight: 500;
@@ -138,7 +140,23 @@ span.header-logo:focus{
     letter-spacing: 0.02em;
     color: var(--second-link-color);
 }
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+.contacts-icon{
+    margin-right: 10px;
+}
 
+.envelope{
+    width: 16px;
+    Height: 12px;
+}
+.smartphone{
+    width: 10px;
+    Height: 16px;
+}
 
 /* ---------decision---------- */
 
@@ -147,7 +165,17 @@ span.header-logo:focus{
     padding-top: 200px;
     padding-bottom: 200px;
 }
-
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../img/Img-hero.jpg);
+    
+}
 .decision-heading{
     font-weight: 900;
     font-size: 44px;
@@ -206,6 +234,12 @@ span.header-logo:focus{
 .benefits-element:nth-child(-n+3){
     margin-right: 30px;
 }
+.benefits-icons{
+    padding: 25px 100px;
+    background-color: var(--team-background-color);
+    margin-bottom: 30px;
+}
+
 .benefit-heading{
     font-weight: 700;
     font-size: 14px;
@@ -291,6 +325,56 @@ span.header-logo:focus{
     letter-spacing: 0.03em;
     color: var(--primary-subtitle-color);
 }
+.team-list-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.team-icon{
+    margin-right: 10px;
+}
+.team-icon:nth-last-child(1){
+    margin-right: 0px;
+}
+.team-icon-svg {
+    padding: 0;
+    border: none;
+    width: 44px;
+    height: 44px;
+    fill: var(--primary-background-color-icon);
+}
+.team-icon:hover,
+.team-icon:focus{
+    border-radius: 50%;
+    fill: var(--primary-link-color);
+    background-color: var(--second-background-color-icon);
+}
+
+.team-icon-svg:hover,
+.team-icon-svg:focus{
+    fill: var(--primary-link-color);
+}
+/* ---------customers---------- */
+
+.customers-list{
+    display: flex;
+    fill: var(--primary-background-color-icon);
+}
+.customers-icon{
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--primary-background-color-icon);
+    border-radius: 4px;
+    margin-right: 30px;
+}
+.customers-icon:nth-last-child(1){
+    margin-right: 0px;
+}
+.customers-icon-svg{
+    background-position: 50% 50%;
+    
+}
+
 /* ---------footer---------- */
 footer{
     background-color: var(--second-background-color);
