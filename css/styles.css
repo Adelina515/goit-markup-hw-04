@@ -116,6 +116,8 @@ span.header-logo:focus{
 .contacts-list {
     display: flex;
 }
+
+
 .contacts-element:nth-child(1){
     margin-right: 40px;
 }
@@ -337,6 +339,9 @@ span.header-logo:focus{
     margin-right: 0px;
 }
 .team-icon-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     border: none;
     width: 44px;
@@ -361,6 +366,10 @@ span.header-logo:focus{
     fill: var(--primary-background-color-icon);
 }
 .customers-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     width: 170px;
     height: 92px;
     border: 1px solid var(--primary-background-color-icon);
@@ -370,16 +379,19 @@ span.header-logo:focus{
 .customers-icon:nth-last-child(1){
     margin-right: 0px;
 }
-.customers-icon-svg{
-    background-position: 50% 50%;
-    
+.customers-icon:hover,
+.customers-icon:focus{
+    border-color: var(--second-background-color-icon);
+    fill: var(--second-background-color-icon);
 }
-
 /* ---------footer---------- */
 footer{
     background-color: var(--second-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer-container{
+    display: flex;
 }
 .footer-address{
     margin-top: 28px;
@@ -429,6 +441,43 @@ span.footer-logo:focus {
 .footer-addres:hover,
 .footer-addres:focus{
     color: var(--accent-color);
+}
+.footer-social-container{
+    padding-top: 10px;
+    margin-left: 70px;
+}
+.footer-social-heading{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-header-color);
+}
+.footer-social-list{
+    display: flex;
+    margin-top: 20px;
+}
+.footer-social-element{
+    margin-right: 10px;
+}
+.footer-social-element:nth-last-child(1) {
+    margin-right: 0px;
+}
+.footer-social-icon-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    width: 44px;
+    height: 44px;
+}
+
+.footer-social-icon-svg:hover,
+.footer-social-icon-svg:focus {
+    border-radius: 50%;
+    background-color: var(--second-background-color-icon);
 }
 
 /* ---------portfolio---------- */
@@ -484,6 +533,10 @@ span.footer-logo:focus {
 }
 .portfolio-element:nth-last-child(-n+3) {
     margin-bottom: 0px;
+}
+.portfolio-element:hover,
+.portfolio-element:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-img{
     display: block;
