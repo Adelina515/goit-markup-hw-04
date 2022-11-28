@@ -117,12 +117,13 @@ span.header-logo:focus{
     display: flex;
 }
 
-
 .contacts-element:nth-child(1){
     margin-right: 40px;
 }
 
 .header-mail{
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -136,6 +137,8 @@ span.header-logo:focus{
     fill: var(--accent-color);
 }
 .header-tel{
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -176,6 +179,9 @@ span.header-logo:focus{
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
             url(../img/Img-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .decision-heading{
@@ -237,7 +243,11 @@ span.header-logo:focus{
     margin-right: 30px;
 }
 .benefits-icons{
-    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
     background-color: var(--team-background-color);
     margin-bottom: 30px;
 }
@@ -346,26 +356,26 @@ span.header-logo:focus{
     border: none;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
     fill: var(--primary-background-color-icon);
 }
-.team-icon:hover,
-.team-icon:focus{
-    border-radius: 50%;
-    fill: var(--primary-link-color);
-    background-color: var(--second-background-color-icon);
-}
-
 .team-icon-svg:hover,
 .team-icon-svg:focus{
     fill: var(--primary-link-color);
+    background-color: var(--second-background-color-icon);
 }
 /* ---------customers---------- */
 
 .customers-list{
     display: flex;
-    fill: var(--primary-background-color-icon);
 }
 .customers-icon{
+    margin-right: 30px;
+}
+.customers-icon:nth-last-child(1){
+    margin-right: 0px;
+}
+.customers-icon-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,13 +384,10 @@ span.header-logo:focus{
     height: 92px;
     border: 1px solid var(--primary-background-color-icon);
     border-radius: 4px;
-    margin-right: 30px;
+    fill: var(--primary-background-color-icon);
 }
-.customers-icon:nth-last-child(1){
-    margin-right: 0px;
-}
-.customers-icon:hover,
-.customers-icon:focus{
+.customers-icon-link:hover,
+.customers-icon-link:focus{
     border-color: var(--second-background-color-icon);
     fill: var(--second-background-color-icon);
 }
@@ -392,6 +399,7 @@ footer{
 }
 .footer-container{
     display: flex;
+    align-items: baseline;
 }
 .footer-address{
     margin-top: 28px;
@@ -443,7 +451,8 @@ span.footer-logo:focus {
     color: var(--accent-color);
 }
 .footer-social-container{
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
     margin-left: 70px;
 }
 .footer-social-heading{
@@ -472,13 +481,14 @@ span.footer-logo:focus {
     border: none;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
 }
 
 .footer-social-icon-svg:hover,
 .footer-social-icon-svg:focus {
-    border-radius: 50%;
     background-color: var(--second-background-color-icon);
 }
+    
 
 /* ---------portfolio---------- */
 
@@ -534,9 +544,10 @@ span.footer-logo:focus {
 .portfolio-element:nth-last-child(-n+3) {
     margin-bottom: 0px;
 }
-.portfolio-element:hover,
-.portfolio-element:focus{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+.portfolio-element-link:hover,
+.portfolio-element-link:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-img{
     display: block;
