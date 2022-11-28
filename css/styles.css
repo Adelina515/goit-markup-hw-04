@@ -13,6 +13,7 @@
 --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
 --second-background-color-icon: #2196F3;
 --primary-background-color-icon: #AFB1B8;
+--footer-background-color: rgba(255, 255, 255, 0.1);
 }
 
 .link{
@@ -115,6 +116,7 @@ span.header-logo:focus{
 }
 .contacts-list {
     display: flex;
+    align-items: center;
 }
 
 .contacts-element:nth-child(1){
@@ -151,6 +153,7 @@ span.header-logo:focus{
     fill: var(--accent-color);
 }
 .contacts-icon{
+    fill: currentColor;
     margin-right: 10px;
 }
 
@@ -483,6 +486,7 @@ span.footer-logo:focus {
     height: 44px;
     border-radius: 50%;
     fill: var(--primary-link-color);
+    background-color: var(--footer-background-color);
 }
 
 .footer-social-icon-svg:hover,
